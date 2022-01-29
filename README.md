@@ -51,3 +51,6 @@ Unlock the power of the secret recipe!
   - C - Fruity - One - Curry
   
 - Resolving it unlock: TODO
+
+ ### Ressources
+- <a href='https://www.freepik.com/vectors/star'>Star vector created by macrovector - www.freepik.com</a>
