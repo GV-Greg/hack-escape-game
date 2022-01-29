@@ -1,0 +1,12 @@
+#canvas {
+    margin: 25% auto 0;
+    transform: translateY(-50%);
+    width: 50%;
+}
+#responsive-canvas {
+    width: 100%;
+}
+
+img{
+    display: none !important;
+}
