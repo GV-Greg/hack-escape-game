@@ -1,6 +1,34 @@
 # hack-escape-game
 Project realised during a hackathon on a private server on an Escape Game theme.
 
+## Documentation
+
+Procedure for creating a new enigma
+- First step >>> create a folder in the 'modules' folder with a shortcut name of your enigma (use this shortcut name for the continuation of the procedure).
+  In this folder create copy 'template.html' which is located in the '_template' folder of the 'modules' folder.
+  This file is a template modal where the enigma will appear.
+  Change 'template' with the shortcut name of your enigma in the 'id' of the first div :
+  ```html 
+  <div id="template-dialog" class="modal" role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc" aria-modal="true" aria-hidden="true" tabindex="-1">  ```
+  ```
+  For the button, change also 'template' with the shortcut name of your enigma in the 'data-dismiss' attribute
+  and change 'template' with the shortcut name of your enigma in the parameters of the 'closeModal' function :
+  ```html 
+  <button type="button" aria-label="Fermer" title="Fermer cette fenêtre modale" data-dismiss="template-dialog" onclick="closeModal('template-dialog', 'template-enigma')">X</button>
+  ```
+- Second step >>> duplicate the button to call modal :
+  ```html 
+  <button aria-haspopup="dialog" aria-controls="template-dialog" class="template-enigma">Modal Enigma</button>
+  ```
+  Change 'template' in the 'aria-controls' and 'class' attributes to name of your enigma.
+- Third step >>> duplicate the call to include an html file in the "index.html" page :
+  ```html
+  <div w3-include-html="./modules/_template/template.html" id="template-enigma" class="enigma"></div>
+  ```
+  Change the path to the html file of your enigma.
+  Change 'template' in 'id' attributes to name of your enigma.
+- Let's code your enigma in the div with the id 'myEnigma' 
+
 ## Ideas
 
 ### Theme

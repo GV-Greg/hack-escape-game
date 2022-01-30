@@ -10,25 +10,32 @@
         <title>Hack Escape Game</title>
 
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="shortcut icon" href="./assets/storage/favicon.png">
-    </head>
-    <body>
-        <div class="container">
-            <!-- Door to the gallery -->
-            <a id="door" href="gallery.html">
+        <link rel="shortcut icon" href="./assets/storage/favicon.ico">
 
-            </a>
-            <div id="container-portrait">
-                <div id="portrait">
-                    <figure class="portrait__item">
-                        <img src="./assets/storage/characters/character_mystery.png" class="portrait__img" alt="portrait character mystery">
-                    </figure>
+    </head>
+    <body class="js-page">
+        <main id="js-document">
+            <div class="container">
+                <!-- Example button to call modal for enigma -->
+                <button aria-haspopup="dialog" aria-controls="template-dialog" class="template-enigma">Modal Enigma</button>
+                <!-- Door to the gallery -->
+                <a id="door" href="gallery.html">
+
+                </a>
+                <div id="container-portrait">
+                    <div id="portrait">
+                        <figure class="portrait__item">
+                            <img src="./assets/storage/characters/character_mystery.png" class="portrait__img" alt="portrait character mystery">
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </main>
+        <!-- include html file calls -->
+        <div w3-include-html="./modules/_template/template.html" id="template-enigma" class="enigma"></div>
+        <div w3-include-html="./modules/greg/test.html" id="test-enigma" class="enigma"></div>
         <!-- SCRIPTS -->
-        <script async src="./assets/js/app.js"></script>
+        <script src="./assets/js/app.js" defer></script>
     </body>
 </html>
 
