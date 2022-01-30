@@ -1,12 +1,51 @@
-#canvas {
-    margin: 25% auto 0;
-    transform: translateY(-50%);
-    width: 50%;
-}
-#responsive-canvas {
-    width: 100%;
+#canvas{
+    display: flex;
+    margin: 10vh auto 0;
+    height: 55vh;
+    width: 60%;
+    border: 1px solid black;
 }
 
-img{
-    display: none !important;
+.canvas__inner{
+    position: relative;
+    width: 55vh;
+}
+
+.line{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    z-index: -2;
+}
+
+#unit, #ten, #hundred, #thousand{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #FDE776;
+}
+
+#unit{
+    top: 0;
+    right: 0;
+}
+
+#ten{
+    top: 0;
+    left: 0;
+}
+
+#hundred{
+    bottom: 0;
+    right: 0;
+}
+
+#thousand{
+    bottom: 0;
+    left: 0;
+}
+
+.canvas__select{
+    width: 40%;
 }

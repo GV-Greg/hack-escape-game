@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#FFFFFF;}
+	.st3{display:inline;fill:none;stroke:#000000;stroke-width:40;stroke-miterlimit:10;}
+	.st4{display:inline;fill:#FFFFFF;stroke:#000000;stroke-width:40;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;stroke:#000000;stroke-width:40;stroke-miterlimit:10;}
+	.st6{display:inline;fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+</style>
+<g id="Calque_1" class="st0">
+	<polygon class="st1" points="520.45,999.09 480.45,999.09 480.45,0.83 870.43,0.83 870.43,40.6 520.45,40.6 	"/>
+</g>
+<g id="Calque_3" class="st0">
+	<g class="st1">
+		<line class="st2" x1="849.45" y1="276.74" x2="491.51" y2="276.74"/>
+		<rect x="491.51" y="256.74" width="357.94" height="40"/>
+	</g>
+	<g class="st1">
+		<line class="st2" x1="499.81" y1="998.3" x2="499.81" y2="3.05"/>
+		<rect x="479.8" y="3.05" width="40" height="995.26"/>
+	</g>
+</g>
+<g id="Calque_4" class="st0">
+	<polyline class="st3" points="499,998.3 499.96,44.3 844.91,277.52 	"/>
+</g>
+<g id="Calque_5" class="st0">
+	<line class="st4" x1="499.5" y1="1003" x2="499.5" y2="2.04"/>
+	<line class="st3" x1="499.96" y1="291.61" x2="844.91" y2="18.48"/>
+</g>
+<g id="Calque_6" class="st0">
+	<line class="st3" x1="499.5" y1="1003" x2="499.5" y2="18.48"/>
+	<path class="st3" d="M499.41,22.48h345.41L499.87,295.61C499.87,301.35,499.41,22.48,499.41,22.48z"/>
+</g>
+<g id="Calque_7" class="st0">
+	<line class="st4" x1="499.1" y1="2.57" x2="499.1" y2="995.96"/>
+	<line class="st4" x1="759.56" y1="2.04" x2="759.56" y2="285.18"/>
+</g>
+<g id="Calque_7_-_copie">
+	<path class="st5" d="M759.56,298.61V20.83c0,0-256.46,0.51-260.47,0.51v974.62"/>
+</g>
+<g id="Calque_2" class="st0">
+	<rect x="1.56" y="0.28" class="st6" width="997.7" height="998.85"/>
+</g>
+</svg>

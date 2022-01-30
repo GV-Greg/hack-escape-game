@@ -1,44 +1,55 @@
-const canvas = document.getElementById('responsive-canvas');
-const heightRatio = 0.49;
-canvas.height = canvas.width * heightRatio;
-
-const ctx = canvas.getContext("2d");
-ctx.fillStyle = "gray";
-ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-class Sprites {
-    constructor(image, posX, posY) {
-        this.image = document.getElementById(image);
-        this.posX = posX;
-        this.posY = posY;
-        this.width = this.image.width;
-        this.height = this.image.height;
-    }
-    draw(){
-        ctx.drawImage(this.image, this.posX, this.posY);
+function rotate(name, object, rotate = 180){
+    for(let key in object) {
+        const img = document.createElement('img');
+        img.src = object[key];
+        img.setAttribute('style', 'transform:rotate('+rotate+'deg)');
+        document.getElementById(name).appendChild(img);
     }
 }
 
-const line = new Sprites('base_line', canvas.width / 2, canvas.height / 2);
+function flip(name, object, rotate = 180){
+    // object.forEach(element => {
+    //     element = document.querySelector(name).style.transform = "rotateY("+rotate+")";
+    // });
+}
 
-/* 
-let unit = new Sprites('image_id', width, height);
-let ten = new Sprites('image_id', width, height);
-let hundred = new Sprites('image_id', width, height);
-let thousand = new Sprites('image_id', width, height); 
+const upperRight = document.getElementById('unit')
+const upperLeft = document.getElementById('ten')
+const bottomRight = document.getElementById('thousand')
+const bottomLeft = document.getElementById('hundred')
+
+const symbolList = document.querySelector('.canvas__select')
+const triggerSections = [upperRight, upperLeft, bottomRight, bottomLeft];
+const cirsetercienSpritePath ="../../assets/storage/cirstercians/"
+
+const unitSprite = {
+    "0": "",  // no sprite
+    "1": cirsetercienSpritePath+"1.svg",
+    "2": cirsetercienSpritePath+"2.svg",
+    "3": cirsetercienSpritePath+"3.svg",
+    "4": cirsetercienSpritePath+"4.svg",
+    "5": cirsetercienSpritePath+"5.svg",
+    "6": cirsetercienSpritePath+"6.svg",
+    "7": cirsetercienSpritePath+"7.svg",
+    "8": cirsetercienSpritePath+"8.svg",
+    "9": cirsetercienSpritePath+"9.svg",
+}
+
+/*
+const cirstercianNumber = {
+    "unit": unitSprite,
+    "ten": flip('#ten', unitSprite),
+    "hundred": flip('#ten', unitSprite) && rotate('#thousand', unitSprite),
+    "thousand": rotate('#thousand', unitSprite),
+}
 */
 
-// drawing loop
-function render() {
-    // Here we render all the sprites after clearing the screen
-    ctx.clearRect(0, 0, width, height);
-    
-    line.draw();
-}
+triggerSections.forEach(element => {
+    element.addEventListener('click', (event) => {
+        event.preventDefault();
+        rotate('canvas__select', unitSprite)
 
-function loop() {
-    render();
-    requestAnimationFrame(loop);
-}
-
-requestAnimationFrame(loop);
+        /* display all icon for the target view */
+        /* event listenent on element to add image -> dom manipulation (innerhtml) */
+    });
+});
