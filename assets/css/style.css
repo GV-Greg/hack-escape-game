@@ -13,6 +13,46 @@ body {
 }
 
 /* Homepage */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+#door {
+  height: 600px;
+  width: 250px;
+  margin-left: 250px;
+  background-color: #000335;
+  align-self: end;
+}
+
+#container-portrait {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+#container-portrait #portrait {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 50px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+  align-items: start;
+}
+#container-portrait #portrait .portrait__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Page gallery */
 .container-gallery {
   padding: 25px;
